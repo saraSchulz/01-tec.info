@@ -1,0 +1,34 @@
+<script>
+    //ENTRADA
+    const candidato1 = prompt(`Qual é o nome do 1º candidato`);
+    const candidato2 = prompt(`Qual é o nome do 2º candidato`);
+    const candidato3 = prompt(`Qual é o nome do 3º candidato`);
+    const eleitores =  Number(prompt(`qual a quantidade de alunos eleitores na sala?`));
+    //PROCESSAMENTO
+    let cand1 = 0;
+    let cand2 = 0;
+    let cand3 = 0;
+    for(let contador = 1; contador<=eleitores; contador++){
+        const voto = Number(prompt(`Em qual Candidato você quer votar? (1 - ${candidato1})(2 - ${candidato2})(3 - ${candidato3})`));
+        switch(voto){
+            case 1: 
+                cand1++;
+                break;
+            case 2:
+                cand2++;
+                break;
+            case 3:
+                cand3++;
+                break;
+            default:
+                alert(`VOTO INVALIDO`);
+                break;
+        }
+    }
+    let perc1 = (cand1 * 100)/eleitores;
+    let perc2 = (cand2 * 100)/eleitores;
+    let perc3 = (cand3 * 100)/eleitores;
+    //SAIDA
+    document.write(`${candidato1} Recebeu ${cand1} votos, com o percentual de ${perc1}% dos votos <br>${candidato2} Recebeu ${cand2} votos, com o percentual de ${perc2}% dos votos <br>${candidato3} Recebeu ${cand3} votos, com o percentual de ${perc3}% dos votos`);
+    
+</script>

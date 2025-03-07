@@ -1,0 +1,24 @@
+<script>
+    //ENTRADA
+
+    const idade = Number(prompt(`Qual a idade do seu cachorro?`));
+    const porte = prompt(`Qual o porte de seu cachorro? (P-Pequeno. M-Médio, G-Grande)`);
+    let dogIdade = 0
+
+    //PROCESSAMENTO
+        switch(porte){
+            case "P":
+                dogIdade = idade * 5;
+                break;
+            case "M":
+                dogIdade = idade * 6;
+                break;
+            case "G":
+                dogIdade = idade * 7;
+                break;
+            default:
+                alert(`DADOS INVALIDOS`);
+                break;
+        }
+        alert(`${dogIdade}`);
+</script>

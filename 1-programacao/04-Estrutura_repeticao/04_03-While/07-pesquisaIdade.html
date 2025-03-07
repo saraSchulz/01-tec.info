@@ -1,0 +1,29 @@
+<script>
+    let contador = 0;
+    let contadorF = 0;
+    let somaSalario = 0;
+    let idd = [];
+    let idade = 0;
+    //entrada
+    while(idade >= 0){
+        idade = Number(prompt(`Informe sua idade:`));
+        
+        if(idade > 0){
+            idd.push(idade);
+
+            let sexo = prompt(`Informe seu sexo :(F-Feminino, M-Masculino)`).toLowerCase();
+                if(sexo == "f"){
+                    contadorF ++;
+                }
+            let salario = Number(prompt(`Informe seu salario:`));
+            somaSalario += salario; 
+
+            contador++;
+        }
+    }
+    //processamnto
+    idd.sort((a, b) => a-b);
+    let mediaSalarial = somaSalario / contador;
+    //saida
+    document.write(`A média dos salários do grupo é de R$${mediaSalarial.toFixed(2).replace(".",",")}<br>A maior idade do grupo ${idd[contador-1]} <br> A menor idade do grupo ${idd[0]}<br>A quantidade de mulheres é de ${contadorF} Mulheres`);
+</script>

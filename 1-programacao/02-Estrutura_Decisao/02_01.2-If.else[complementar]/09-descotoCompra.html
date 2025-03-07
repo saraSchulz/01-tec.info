@@ -1,0 +1,19 @@
+<script>
+
+    //ENTRADA
+
+    const valor = Number(prompt(`Qual o valor do computador?`));
+    const pagamento = prompt(`Qual a forma de pagamento? (B-Boleto , D-Dinheiro, P-Pix)`);
+    let desconto = 0;
+    //PROCESSAMENTO 
+
+    if(pagamento == "B"){
+        desconto = valor * 0.97;
+    }else if(pagamento == "D"){
+        desconto = valor * 0.95;
+    }else if(pagamento == "P"){
+        desconto = valor * 0.9 ;
+    }
+
+    document.write(`Preço final de R$${desconto.toFixed(2).replace(".",",")}`);
+</script>

@@ -1,0 +1,14 @@
+<script>
+    
+    //ENTRADA
+    let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+    //PROCESSAMENTO
+    let joaos = [];
+    for(let escolhe of listaDeNomes){
+        if(escolhe.search("João") >= 0 || escolhe.search("Joao") >= 0){
+            joaos.push(escolhe);
+        }
+    }
+    //SAIDA
+        document.write(joaos);     
+</script>

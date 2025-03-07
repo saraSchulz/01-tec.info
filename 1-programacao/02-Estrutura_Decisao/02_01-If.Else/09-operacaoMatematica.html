@@ -1,0 +1,119 @@
+<script>
+    //ENTRADA
+
+    const num1 = Number(prompt(`informe um numero`));
+    const num2 = Number(prompt(`informe outro numero`));
+    const operacao = prompt(`qual operação você deseja realizar? (responda com + , - , x ou /)`);
+    
+    //PROCESSAMENTO/SAIDA
+    const soma = num1 + num2;
+    const sub = num1 - num2;
+    const mult = num1 * num2;
+    const div = num1 / num2;
+
+    //SOMA
+    if( operacao == "+"){
+        //PAR
+        if( (soma%2 == 0) && (soma > 0) && (Number.isInteger(soma))) {           
+            alert(`${soma} = par, positivo, intero`); 
+        
+        }else if( (soma%2 == 0) && (soma < 0) && (Number.isInteger(soma))) {       
+            alert(`${soma} = par, negativo, Inteiro`);
+        //IMPAR
+        } else if ((soma > 0) && (Number.isInteger(soma))){
+            alert(`${soma} = Impar, positivo, inteiro`);
+
+        }else if ((soma > 0) && (!Number.isInteger(soma))){
+            alert(`${soma} = Impar, positivo, decimal`);
+
+        }else if ((soma < 0) && (Number.isInteger)){
+            alert(`${soma} = Impar, Negativo, Inteiro`);
+        
+        }else if ((soma < 0) && (!Number.isInteger(soma))){
+            alert(`${soma} = Impar, negativo, decimal`);
+        //???
+        }else {
+            alert(`dados invalidos`);
+        }
+    
+    //SUBTRAÇÃO
+    } else if (operacao == "-"){
+        //PAR
+        if((sub%2 == 0) && (sub > 0) && (Number.isInteger(sub))){
+            alert(`${sub} = Par, Positivo, Inteiro`);
+
+        }else if((sub%2 == 0) && (sub < 0) && (Number.isInteger(sub))){
+            alert(`${sub} = Par, Negativo, Inteiro`);
+        //IMPAR
+        }else if((sub > 0) && (Number.isInteger(sub))){
+            alert(` ${sub} = Impar, Positivo, Inteiro`);
+
+        }else if((sub > 0) && (!Number.isInteger(sub))){
+            alert(`${sub} = Impar, Positivo, decimal`);
+
+        }else if((sub < 0) && (Number.isInteger(sub))){
+            alert(`${sub} = Impar, Negativo, Inteiro`);
+
+        }else if((sub < 0) && (!Number.isInteger(sub))){
+            alert(`${sub} = Impar, Negativo, Decimal`);
+        //???
+        }else {
+            alert(`dados invalidos`);
+        }
+
+    //MULTIPLICAÇÃO    
+    }else if(operacao == "x"){
+        //PAR
+        if((mult%2 == 0) && (mult > 0) && (Number.isInteger(mult))){
+            alert(`${mult} = Par, Positivo, Inteiro`);
+
+        }else if((mult%2 == 0) && (mult < 0) && (Number.isInteger(mult))){
+            alert(`${mult} = Par, Negativo, Inteiro`);
+        //IMPAR
+        }else if((mult > 0) && (Number.isInteger(mult))){
+            alert(` ${mult} = Impar, Positivo, Inteiro`);
+
+        }else if((mult > 0) && (!Number.isInteger(mult))){
+            alert(`${mult} = Impar, Positivo, decimal`);
+
+        }else if((mult < 0) && (Number.isInteger(mult))){
+            alert(`${mult} = Impar, Negativo, Inteiro`);
+
+        }else if((mult < 0) && (!Number.isInteger(mult))){
+            alert(`${mult} = Impar, Negativo, Decimal`);
+        //???
+        }else {
+            alert(`dados invalidos`);
+        }
+
+    //DIVISÃO
+    }else if(operacao == "/"){
+        //PAR
+        if((div%2 == 0) && (div > 0) && (Number.isInteger(div))){
+            alert(`${div} = Par, Positivo, Inteiro`);
+
+        }else if((div%2 == 0) && (div < 0) && (Number.isInteger(div))){
+            alert(`${div} = Par, Negativo, Inteiro`);
+        //IMPAR
+        }else if((div > 0) && (Number.isInteger(div))){
+            alert(` ${div} = Impar, Positivo, Inteiro`);
+
+        }else if((div > 0) && (!Number.isInteger(div))){
+            alert(`${div} = Impar, Positivo, decimal`);
+
+        }else if((div < 0) && (Number.isInteger(div))){
+            alert(`${div} = Impar, Negativo, Inteiro`);
+
+        }else if((div < 0) && (!Number.isInteger(div))){
+            alert(`${div} = Impar, Negativo, Decimal`);
+        //???
+        }else {
+            alert(`dados invalidos`);
+        }
+
+    //ERRO DE DADOS    
+    }else {
+        alert(`dados inseridos incorretamente. Tente Novamente`);
+    }
+    
+</script>

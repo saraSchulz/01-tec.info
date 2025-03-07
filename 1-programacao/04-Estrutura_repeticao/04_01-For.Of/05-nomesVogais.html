@@ -1,0 +1,19 @@
+<script>
+    //ENTRADA
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    //PROCESSAMENTO
+    let nomesVogais = [];
+    for(let nome of listaDeNomes){
+        switch(nome[0]){
+            case "A": 
+            case "E":
+            case "I": 
+            case "O": 
+            case "U":
+                nomesVogais.push(nome);
+            break;
+        }
+    }
+    //SAIDA
+    document.write(`${nomesVogais.join(" - ")}`);
+</script>

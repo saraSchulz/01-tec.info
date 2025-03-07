@@ -1,0 +1,27 @@
+<script>
+ 
+
+ //ENTRADA
+
+ let peso = Number(prompt(`Qual o é seu peso?`));
+ let altura = Number(prompt(`Qual é a sua altura?(em Metros)`));
+
+ let imc = peso / (altura * altura);
+ //PROCESSAMENTO
+
+ if ( imc <= 18.5 ){
+     alert(`Subpeso`);
+
+ }else if(imc <= 25){
+     alert(`Normal`);
+
+ }else if(imc <= 30){
+     alert(`Sobrepeso`);
+
+ }else if(imc > 30){
+    alert(`Obeso`);
+ }
+
+ //SAÍDA
+
+</script>

@@ -1,0 +1,40 @@
+<script>
+    //ENTRADA
+    let cidades = ["Porto Alegre", "Curitiba", "Florianópolis", "Joinville", "Blumenau", "Gramado", "Santa Maria", "Londrina", "Itajaí"];
+    //PROCESSAMENTO
+    let RS = [];
+    let SC = [];
+    let PR = [];
+    for(cdd of cidades){
+        const resposta = prompt(`Qual é o estado da cidade ${cdd} ? (Responda com as siglas = (RS - Rio Grande do Sul, SC - Santa Catarina, PR - Paraná))`).toLowerCase();
+        if(resposta == "rs"){
+            RS.push(cdd);
+        }else if(resposta == "sc"){
+            SC.push(cdd);
+        }else if(resposta == "pr"){
+            PR.push(cdd);
+        }else{
+            alert(`RESPOSTA INVALIDA!! (Responda com as siglas = (RS - Rio Grande do Sul, SC - Santa Catarina, PR - Paraná)) `);
+        }
+    }
+    //SAIDA    
+    if((RS.length >= SC.length)&&(RS.length >= PR.length)){
+        if(SC.length >= PR.length){
+            document.write(`Cidades do Rio Grande do Sul = ${RS.join(" - ")} Com ${RS.length} cidades; <br>Cidades de Santa Catarina = ${SC.join(" - ")} Com ${SC.length} cidades; <br>Cidades do Paraná = ${PR.join(" - ")} com ${PR.length} cidades;`);
+        }else{
+            document.write(`Cidades do Rio Grande do Sul = ${RS.join(" - ")} Com ${RS.length} cidades; <br>Cidades do Paraná = ${PR.join(" - ")} com ${PR.length} cidades; <br>Cidades de Santa Catarina = ${SC.join(" - ")} Com ${SC.length} cidades;`);
+        }
+    }else if((SC.length >= RS.length)&&(SC.length>= PR.length)){
+        if(RS.length >= PR.length){
+            document.write(`Cidades de Santa Catarina = ${SC.join(" - ")} Com ${SC.length} cidades; <br>Cidades do Rio Grande do Sul = ${RS.join(" - ")} Com ${RS.length} cidades; <br>Cidades do Paraná = ${PR.join(" - ")} com ${PR.length} cidades;`);
+        }else{
+            document.write(`Cidades de Santa Catarina = ${SC.join(" - ")} Com ${SC.length} cidades; <br>Cidades do Paraná = ${PR.join(" - ")} com ${PR.length} cidades; <br>Cidades do Rio Grande do Sul = ${RS.join(" - ")} Com ${RS.length} cidades;`);
+        }
+    }else if((PR.length >= RS.length)&&(PR.length >= SC.length)){
+        if(RS.length >= SC.length){
+            document.write(`Cidades do Paraná = ${PR.join(" - ")} com ${PR.length} cidades; <br>Cidades do Rio Grande do Sul = ${RS.join(" - ")} Com ${RS.length} cidades; <br>Cidades de Santa Catarina = ${SC.join(" - ")} Com ${SC.length} cidades;`);
+        }else{
+            document.write(`Cidades do Paraná = ${PR.join(" - ")} com ${PR.length} cidades; <br>Cidades de Santa Catarina = ${SC.join(" - ")} Com ${SC.length} cidades; <br>Cidades do Rio Grande do Sul = ${RS.join(" - ")} Com ${RS.length} cidades;`);
+        }
+    }
+</script>

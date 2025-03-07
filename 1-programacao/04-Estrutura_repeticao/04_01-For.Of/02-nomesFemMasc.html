@@ -1,0 +1,17 @@
+<script>
+    //ENTRADA
+    let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
+    //PROCESSAMENTO
+    let nomesFemininos = [];
+    let nomesMasculinos = [];
+    for(let nomes of listaDeNomes){
+        let femMasc = prompt(`O nome ${nomes} é Feminino? (S-Sim, N-Não)`).toLowerCase();
+        if (femMasc == "s"){
+            nomesFemininos.push(nomes);
+        }else {
+            nomesMasculinos.push(nomes);
+        }
+    }
+    //SAIDA
+    document.write(`${nomesFemininos.join(" - ")} <br> ${nomesMasculinos.join(" - ")}`);
+</script>

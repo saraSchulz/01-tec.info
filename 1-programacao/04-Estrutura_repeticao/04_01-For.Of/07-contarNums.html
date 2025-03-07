@@ -1,0 +1,13 @@
+<script>
+    //ENTRADA
+    let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+    //PROCESSAMENTO
+    let numsSelesionados = [];
+    for(let num of listaDeNumeros){
+        if(Number.isInteger(num) && num >= 0){
+            numsSelesionados.push(num);
+        }
+    }
+    //SAIDA
+    document.write(`Os números localizados foram : ${numsSelesionados.join(" - ")}; <br> Tendo na lista o total de${numsSelesionados.length} Números selecionados.`);
+</script>

@@ -1,0 +1,13 @@
+<script>
+    //ENTRADA
+    let qtdNotas = Number(prompt(` Informe a quantidade de notas que o aluno obteve:`));
+    let notaFinal= 0;
+    //PROCESSAMENTO
+    for(let contador = 1; contador <= qtdNotas; contador++ ){
+        let notas = Number(prompt(`Informe a ${contador} nota do aluno`));
+        notaFinal += notas;
+    }
+    let media = notaFinal / qtdNotas;
+    //SAIDA
+    document.write(`A média do Aluno é: ${media.toFixed(2)}`);
+</script>

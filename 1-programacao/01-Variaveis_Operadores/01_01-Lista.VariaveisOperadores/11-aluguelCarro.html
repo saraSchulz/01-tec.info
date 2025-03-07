@@ -1,0 +1,9 @@
+<script>
+    //entrada
+    const qtdDias = Number(prompt(`Quantos dias o carro foi alugado?`));
+    const qtdKm = Number(prompt(`Quantos quilômetros foram rodados?`));
+    //processamento
+    const valorFianl = (qtdDias * 60) + (qtdKm * 0,15);
+    //saida
+    document.write(`Valor final a ser pago é de : R$${valorFianl.toFixed(2).replace(".",",")}`);
+</script>

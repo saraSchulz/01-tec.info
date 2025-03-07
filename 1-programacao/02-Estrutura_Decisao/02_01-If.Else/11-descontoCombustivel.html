@@ -1,0 +1,36 @@
+<script>
+
+    //ENTRADA
+
+    const litros = Number(prompt(`quantos litros de combustivel você irá abastecer?`));
+    const combustivel = prompt (`Você vai abastecer com alcol ou gasolina?(A-álcool, G-gasolina)`);
+
+    //PROCESSAMENTO
+    let desconto = 0;
+
+    if(combustivel == "A"){
+        let preco = litros * 6.10;
+
+        if(litros < 20){
+        desconto = preco -(preco * 0.03);
+
+        }else{
+        desconto = preco - (preco * 0.05);
+
+        }
+    }else if (combustivel == "G"){
+        let preco = litros * 6.50;
+
+        if(litros < 20){
+        desconto = preco -(preco * 0.04);
+
+        }else{
+        desconto = preco - (preco * 0.06);
+        
+        }
+    }else{
+        alert(`Dados invalidos`);
+    }
+    
+    alert(`você devera pagar R$${desconto.toFixed(2).replace(".",",")}`);
+</script>

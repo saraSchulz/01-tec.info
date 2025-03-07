@@ -1,0 +1,11 @@
+<script>
+    //ENTRADA
+    let nota = Number(prompt("Digite um número entre 1 e 10:"));
+    //PROCESSAMENTO 
+    while (nota < 1 || nota > 10) {
+        alert(`Número invalido`);
+        nota = Number(prompt("Digite um número entre 1 e 10:"));
+    }
+    // SAIDA
+    document.write(`Sua nota é ${nota}`);
+</script>

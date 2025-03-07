@@ -1,0 +1,21 @@
+<script>
+    function calcularFatorial(numero) {
+        if (numero < 0) {
+            return "Não é possível calcular o fatorial de um número negativo.";
+        }
+        let fatorial = 1;
+        for (let i = 2; i <= numero; i++) {
+            fatorial *= i;
+        }
+        return fatorial;
+    }
+
+    const numero = parseInt(prompt("Informe um número inteiro:"));
+    if (!isNaN(numero)) {
+        alert(`O fatorial de ${numero} é ${calcularFatorial(numero)}`);
+    } else {
+        alert("Por favor, informe um número inteiro válido.");
+    }
+
+
+</script>

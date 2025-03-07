@@ -1,0 +1,28 @@
+<script>
+    //ENTRADA
+    
+    const ladoUm = Number(prompt(`informe o primeiro lado do triangulo:`));
+    const ladoDois = Number(prompt(`informe o segundo lado do triangulo:`));
+    const ladoTres = Number(prompt(`informe o terceiro lado do triangulo:`));
+    
+    //PROCESSAMENTO/SAIDA
+    
+    if((ladoUm < (ladoDois + ladoTres)) && (ladoDois < (ladoUm + ladoTres)) && (ladoTres < (ladoUm + ladoDois))){
+     
+        if((ladoUm == ladoDois) && (ladoUm == ladoTres)){
+        
+            alert(`Os lados informados fomam um triangulo EQUILATERO`);
+    
+        }else if ((ladoUm == ladoDois)||(ladoUm == ladoTres)||(ladoDois == ladoTres)){
+        
+            alert(`Os lados informados fomam um triangulo ISÓSCELES`);
+    
+        }else {
+        
+            alert(`os lados informados formam um triagulo ESCALENO`);
+        }
+    }else{
+        alert(`os lados informados NÃO fomam um triangulo`);
+    }
+    
+    </script>

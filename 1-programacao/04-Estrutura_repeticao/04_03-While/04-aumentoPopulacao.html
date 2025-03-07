@@ -1,0 +1,14 @@
+<script>
+    //ENTRADA 
+    let contador = 0;
+    let popA = 80000;
+    let popB = 200000;
+    //PROCEMENTO
+    while(popA <= popB){
+        popA = popA*1.03;
+        popB = popB*1.015;
+        contador++;
+    }
+    //SAIDA
+    document.write(`Foi preciso o total de ${contador} anos!<br>População A = ${popA.toFixed(2)};<br>População B = ${popB.toFixed(2)};`);
+</script>

@@ -1,0 +1,9 @@
+<script>
+    //entrada
+    const cigarros = Number(prompt(`Quantos cigarros você fuma por dia?`));
+    const anos =  Number(prompt(`A quantos anos você fuma?`));
+    //processamento
+    const diasPerdidos = (((anos*365)*cigarros)*10)/1440;
+    //saida
+    document.write(`Já forma perdidos o total de ${diasPerdidos.toFixed(2)}`);
+</script>

@@ -1,0 +1,12 @@
+<script>
+    //ENTRADA
+    let listaNumeros = [];
+    for(let contador = 1; contador <= 5 ; contador++){
+        let num = Number(prompt(`Informe o ${contador}º número:`));
+        listaNumeros.push(num);
+    }
+    //PROCESSAMENTO
+    listaNumeros.sort((a,b)=>a-b);
+    //SAIDA
+    document.write(`O maior número informado pelo usuario foi: ${listaNumeros[4]}`);
+</script>

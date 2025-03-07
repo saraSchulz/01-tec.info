@@ -1,0 +1,12 @@
+<script>
+    //ENTRADA
+    let dias = 0;
+    let mil = 1000;
+    //PROCESSAMENTO
+    for(let contador = 1; mil <= 2000; contador++){
+        mil = mil * 1.02;
+        dias = contador;
+    }
+    //SAIDA
+    document.write(`Para joãozinho conceguir o total de ${mil.toFixed(2).replace(".",",")} demorará ${dias} dias`);
+</script>

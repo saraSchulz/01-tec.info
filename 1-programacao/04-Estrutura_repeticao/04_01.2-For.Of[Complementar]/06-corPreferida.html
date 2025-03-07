@@ -1,0 +1,16 @@
+<script>
+    //ENTRADA
+    let cores = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"];
+    //PROCESSAMENTO
+    let preferidas = [];
+    for(cor of cores){
+        const prefere = prompt(`Você gosta da cor : ${cor} ? (S-Sim, N-Não)`).toLowerCase();
+        if(prefere == "s"){
+            preferidas.push(cor);
+        }else if(prefere != "n"){
+            alert(`RESPOSTA INVALIDA!! (responda com : S-Sim, N-Não );`);
+        }
+    }
+    //SAIDA
+    document.write(`Você gosta das cores : ${preferidas.join(" - ")}<br>Você tem ${preferidas.length} cores preferidas`);
+</script>

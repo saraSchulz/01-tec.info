@@ -1,0 +1,27 @@
+<script>
+//ENTRADA
+
+    const produto = Number(prompt(`Qual o preço do produto?`));
+
+//PROCESSAMENTO
+let aumento = 0;
+
+if(produto <= 280){
+    aumento = produto + (produto * 0.2);
+
+}else if(produto <= 700){
+    aumento = produto + (produto * 0.15);
+
+} else if(produto <= 1500){
+    aumento = produto + (produto * 0.1);
+
+}else {
+    aumento = produto + (produto * 0.05);
+
+}
+
+//SAIDA
+
+alert(`O preço final do produto é de R$${aumento.toFixed(2).replace(".",",")}`);
+
+</script>

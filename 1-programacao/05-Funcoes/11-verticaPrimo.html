@@ -1,0 +1,33 @@
+<script>
+    function calcularFatorial(numero) {
+        if (numero < 0) {
+            return "Não é possível calcular o fatorial de um número negativo.";
+        }
+        let fatorial = 1;
+        for (let i = 2; i <= numero; i++) {
+            fatorial *= i;
+        }
+        return fatorial;
+    }
+
+    function ehPrimo(numero) {
+        if (numero < 2) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    const numero = parseInt(prompt("Informe um número inteiro:"));
+    if (!isNaN(numero)) {
+        alert(`O fatorial de ${numero} é ${calcularFatorial(numero)}`);
+        alert(`O número ${numero} ${ehPrimo(numero) ? "é primo" : "não é primo"}.`);
+    } else {
+        alert("Por favor, informe um número inteiro válido.");
+    }
+
+</script>

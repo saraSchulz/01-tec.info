@@ -1,0 +1,22 @@
+<script>
+
+    //Entrada
+
+    const primeiraNota = Number(prompt(`Qual  nota do "little brother" antes da ajuda do "big brother"? `));
+    const segundaNota =Number(prompt(`Qual  nota do "little brother" depois da ajuda do "big brother"?`));
+    
+    let acrecimo = (segundaNota - primeiraNota)/4 ;
+    
+    //Processamento/Saida
+
+    if(segundaNota > primeiraNota){
+
+        alert(`a nota do "Big brother" terá um acrecimo de ${acrecimo} pontos`);
+
+    } else {
+
+        alert(`a nota do "Big brother" não terá nenhum acrecimo`);
+
+    }
+   
+</script>

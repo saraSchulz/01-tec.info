@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contato</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>Formulario De contato</h2>
+            <form action="#" method="get">
+                <p>
+                    <label for="nome">*Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </p>
+                <p>
+                    <label for="email">*E-mail:</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="telefone">*Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" required>
+                </p>
+                <p>
+                    <label for="setor">Setor</label>
+                    <select name="setor" id="setor">
+                        <option value="1">Vendas</option>
+                        <option value="2">Administrativo</option>
+                        <option value="3">Financeiro</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="15"></textarea>
+                </p>
+                <fieldset>
+                    <legend>Comunicação Urgente</legend>
+                    <label>
+                        <input type="radio" name="comunicacao" value="1">sim
+                    </label>
+                    <label>
+                        <input type="radio" name="comunicacao" value="0">não
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Obtive Conhecimento do Projeto</legend>
+                    <label>
+                        <input type="checkbox" name="divulgacao" value="1"> Buscador
+                    </label>
+                    <label>
+                        <input type="checkbox" name="divulgacao" value="2"> Publicidade em videos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="divulgacao" value="3"> Amigos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="divulgacao" value="4"> email
+                    </label>
+                    <label>
+                        <input type="checkbox" name="divulgacao" value="5"> Outros
+                    </label>
+                </fieldset>
+                <p>
+                    <input type="reset" value="LIMPAR">
+                    <input type="submit" value="ENVIAR">
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

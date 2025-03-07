@@ -1,0 +1,15 @@
+<script>
+    function contandoVogal(){
+        let letras = Array.from(palavra);
+        let vogais = [];
+        for(item of letras){
+            if((item == "a") || (item == "e") || (item == "i") || (item == "o") || (item == "u")){
+                vogais.push(item);
+            }
+        }
+        alert(vogais.length);
+    }
+
+    const palavra = prompt(`Informe uma palavra`);
+    contandoVogal();
+</script>

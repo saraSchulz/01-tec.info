@@ -1,0 +1,20 @@
+<script>
+     //ENTRADA
+
+     const palavra = (prompt(`Digite uma palavra`).trim());
+     const letra = prompt(`Informe a letra que você deseja encontrar na palavra que acabou de digitar:`);
+     
+    //PROCESSAMENTO
+    const posicao = palavra.search(letra);
+
+    if( posicao !== -1){
+        alert(`A palavra ${palavra} possui a letra ${letra}, ela aparece pela primeira vez na posição ${posicao+1}`);
+    }else{
+        alert(`A palavra ${palavra} não possui a letra ${letra} `);
+    }
+    
+
+
+    //SAÍDA 
+
+</script>

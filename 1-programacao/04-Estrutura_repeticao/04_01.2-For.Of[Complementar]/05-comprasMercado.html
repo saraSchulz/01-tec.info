@@ -1,0 +1,13 @@
+<script>
+    //ENTRADA
+    let lista = ["A", "E", 2, 4.8, "CINQUENTA", "Araquari", 80, 10, 3.2];
+    //PROCESSAMENTO
+    let soma = 0;
+    for(item of lista){
+        if(!isNaN(item)){
+            soma += item;
+        }  
+    }
+    //SAIDA
+    document.write(`As soma dos valores é de : ${soma}`);
+</script>

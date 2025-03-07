@@ -1,0 +1,27 @@
+<script>
+    //ENTRADA
+
+    const viagens = Number(prompt(`Quantas viagens você realizou?`));
+    const cargo = prompt(`Que cargo você ocupa?`);
+    let diaria = 100;
+    let aumento = 0;
+
+    //PROCESSAMENTO
+
+    if((cargo == "Motorista") && (viagens <= 10)){
+        aumento = diaria*1.2;
+    }else if(( cargo == "Motorista") && (viagens > 10)){
+        aumento = diaria * 1.35 ;
+    }else if((cargo == "Cobrador") && ( viagens <= 10)){
+        aumento = diaria;
+    }else if((cargo == "Cobrador") && (viagens > 10)){
+        aumento = diaria * 1.1 ;
+    }else {
+        alert(`ERRO DE DADOS`);
+    }
+
+    //SAIDA
+    document.write(`Cargo de ${cargo}. <br> Valor final de ${aumento.toFixed(2).replace(".",",")}.`);
+
+
+</script>

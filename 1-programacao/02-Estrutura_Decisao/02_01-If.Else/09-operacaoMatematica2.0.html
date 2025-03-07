@@ -1,0 +1,103 @@
+<script>
+    //ENTRADA
+
+    const num1 = Number(prompt(`informe um numero`));
+    const num2 = Number(prompt(`informe outro numero`));
+    const operacao = prompt(`qual operação você deseja realizar? (responda com + , - , x ou /)`);
+    
+    //PROCESSAMENTO/SAIDA
+    const soma = num1 + num2;
+    const sub = num1 - num2;
+    const mult = num1 * num2;
+    const div = num1 / num2;
+
+    //SOMA
+    if( operacao == "+"){
+        alert(soma);
+        if (soma%2 == 0) {
+            alert(`Par`);
+        } else{
+            alert(`Impar`);
+        }
+
+        if(soma > 0){
+            alert(`Positivo`);
+        }else{
+            alert(`Negativo`);
+        }
+
+        if(Number.isInteger(soma)){
+            alert(`Inteiro`);
+        }else{
+            alert(`decimal`);
+        }
+    
+    //SUBTRAÇÃO
+    } else if (operacao == "-"){
+        alert(sub);
+        if (sub%2 == 0) {
+            alert(`Par`);
+        } else{
+            alert(`Impar`);
+        }
+
+        if(sub > 0){
+            alert(`Positivo`);
+        }else{
+            alert(`Negativo`);
+        }
+
+        if(Number.isInteger(sub)){
+            alert(`Inteiro`);
+        }else{
+            alert(`decimal`);
+        }
+        
+
+    //MULTIPLICAÇÃO    
+    }else if(operacao == "x"){
+        alert(mult);
+        if (mult%2 == 0) {
+            alert(`Par`);
+        } else{
+            alert(`Impar`);
+        }
+
+        if(mult > 0){
+            alert(`Positivo`);
+        }else{
+            alert(`Negativo`);
+        }
+
+        if(Number.isInteger(mult)){
+            alert(`Inteiro`);
+        }else{
+            alert(`decimal`);
+        }
+    //DIVISÃO
+    }else if(operacao == "/"){
+        alert(div);
+        if (div%2 == 0) {
+            alert(`Par`);
+        } else{
+            alert(`Impar`);
+        }
+
+        if(div > 0){
+            alert(`Positivo`);
+        }else{
+            alert(`Negativo`);
+        }
+
+        if(Number.isInteger(div)){
+            alert(`Inteiro`);
+        }else{
+            alert(`decimal`);
+        }
+
+    //ERRO DE DADOS    
+    }else {
+        alert(`dados inseridos incorretamente. Tente Novamente`);
+    }
+    
+</script>

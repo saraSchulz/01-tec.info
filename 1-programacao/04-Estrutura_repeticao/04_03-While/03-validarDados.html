@@ -1,0 +1,33 @@
+<script>
+    //NOME
+    let nome = prompt(`Digite seu nome:`);
+    while(nome.length <= 3){
+        alert(`Seu nome deve conter mais de três caracteres!`);
+        nome = prompt(`Digite seu nome:`);
+    }
+    //IDADE
+    let idade = Number(prompt(`Qual é sua idade?`));
+    while(0 > idade || idade > 150){
+        alert(`IMPOCIVEL!!`);
+        idade = Number(prompt(`Qual é sua idade?`));
+    }
+    //SALARIO
+    let salario = Number(prompt(`Informe seu salario`));
+    while(salario < 0){
+        alert(`Seu salário não pode ser menor do que Zero!`);
+        salario = Number(prompt(`Informe seu salario`));
+    }
+    //SEXO
+    let sexo = prompt(`Informe seu sexo: (F-Feminino; M-Masculino)`).toLowerCase();
+    while(sexo !== "f" && sexo != "m"){
+        alert(`Sexo INVALIDO!`);
+        sexo = prompt(`Informe seu sexo: (F-Feminino; M-Masculino)`);
+    }
+    //ESTADO CIVIL
+    let estado = prompt(`Qual é seu estado civil?(S-solteiro, C-Casado, V-Viúvo, D-Divorciado)`);
+    while((estado != `s`) && (estado != `c`) && (estado != `v`) && (estado != `d`)){
+        alert(`INCORRETO!!`);
+        estado = prompt(`Qual é seu estado civil?(S-solteiro, C-Casado, V-Viúvo, D-Divorciado)`);
+    }
+    document(`Nome: ${nome} <br>Idade: ${idade} <br>Salario: R$${salario} <br>Sexo : ${sexo} <br>Estado civil : ${estado}`);
+</script>

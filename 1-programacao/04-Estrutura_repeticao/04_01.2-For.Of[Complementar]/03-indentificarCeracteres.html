@@ -1,0 +1,17 @@
+<script>
+    //ENTRADA
+    const palavra = prompt(`Digite uma palavra:`).toLowerCase().trim();
+    //PROCESSAMENTO
+    let letras = (Array.from(palavra));
+    let consoantes = [];
+    let vogais = [];
+    for(item of letras){
+        if((item == "a") || (item == "e") || (item == "i") || (item == "o") || (item == "u")){
+            vogais.push(item);
+        }else{
+            consoantes.push(item);
+        }
+    }
+    //SAIDA
+    document.write(`Existem ${vogais.length} Vogais na palavra informada; <br>Existem  ${consoantes.length} Consoantes na palavra informada; `);
+</script>

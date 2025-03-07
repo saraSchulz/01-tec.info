@@ -1,0 +1,43 @@
+<script>
+
+  //ENTRADA
+
+  const saque = Number(prompt(`Qual o valor do saque? (valor minimo de saque é R$10, e o Valor máximo é e R$600)`));
+  
+  //PROCESSAMENTO
+
+    const notas100 = Math.floor(saque / 100);
+    const sobra1 = saque - (notas100 * 100);
+
+    const notas50 = Math.floor(sobra1 / 50);
+    const sobra2 = sobra1 - (notas50 * 50);
+
+    const notas10 = Math.floor(sobra2 / 10);
+    const sobra3 = sobra2 - (notas10 * 10);
+
+    const notas5 = Math.floor(sobra3 / 5);
+    const nota1 = sobra3 -(notas5 * 5);
+
+  //SAÍDA
+
+    if((saque < 10) || (saque >600)){
+    alert(`Saque INVALIDO`);
+
+    }else{
+
+    if(saque < 50){
+        document.write(`Seu saque fornece <br>${notas10} notas de R$10 <br>${notas5} notas de R$5 <br>${nota1} notas de R$1`);
+    
+        
+    }else if(saque < 100){
+        document.write(`Seu saque fornece <br>${notas50} notas de R$50  <br>${notas10} notas de R$10 <br>${notas5} notas de R$5 <br>${nota1} notas de R$1`);
+
+    }else{
+        document.write(`Seu saque fornece: <br>${notas100} notas de R$100; <br>${notas50} notas de R$50; <br>${notas10} notas de R$10; <br>${notas5} notas de R$5; <br>${nota1} notas de R$1;`);
+
+    }
+
+    }
+
+
+</script>

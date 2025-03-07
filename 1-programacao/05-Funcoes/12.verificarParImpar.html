@@ -1,0 +1,24 @@
+<script>
+    function verificarParOuImpar(numero) {
+        if (numero % 2 === 0) {
+            return "par";
+        } else {
+            return "ímpar";
+        }
+    }
+
+    function programa() {
+        let numero = parseInt(prompt("Digite um número:"));
+
+        if (isNaN(numero)) {
+            alert("Por favor, insira um número válido.");
+            return;
+        }
+
+        let resultado = verificarParOuImpar(numero);
+        alert(`O número ${numero} é ${resultado}.`);
+    }
+
+    programa();
+
+</script>

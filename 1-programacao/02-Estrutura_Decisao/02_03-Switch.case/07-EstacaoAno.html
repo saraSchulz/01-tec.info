@@ -1,0 +1,65 @@
+<script>
+     //ENTRADA
+
+    const mes = prompt(`Qual o mes que você está? (1- Janeiro, 2-Fevereiro 3-março...)`);
+    const hemisferio = prompt(`Em que hemisfério você se encontra? (S-Sul , N-Norte)`);
+
+    //PROCESSAMENTO
+
+    switch(hemisferio){
+        case "S":
+            switch(mes){
+                case 1: 
+                case 2: 
+                case 3: 
+                    document.write(`Verão`);
+                    break;
+                case 4: 
+                case 5: 
+                case 6: 
+                    document.write(`Outono`);
+                    break;
+                case 7: 
+                case 8: 
+                case 9:
+                    document.write(`Inverno`);
+                    break;
+                case 10: 
+                case 11:
+                case 12:
+                    document.write(`Primavera`);
+                    break;
+                default: 
+                    document.write(`Mês Invalido`);
+                    break;
+            }
+            break;
+        case "N": 
+            switch(mes){
+                case 1: 
+                case 2: 
+                case 3: 
+                    document.write(`Inverno`);
+                    break;
+                case 4: 
+                case 5: 
+                case 6: 
+                    document.write(`Primavera`);
+                    break;
+                case 7: 
+                case 8: 
+                case 9:
+                    document.write(`Verão`);
+                    break;
+                case 10: 
+                case 11:
+                case 12:
+                    document.write(`Outono`);
+                    break;
+                default: 
+                    document.write(`Mês Invalido`);
+                    break;
+            }
+        break;
+    }
+</script>

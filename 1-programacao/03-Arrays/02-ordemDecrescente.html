@@ -1,0 +1,34 @@
+<script>
+    //ENTRADA
+
+    const n1 = Number(prompt(`informe um número inteiro`));
+    const n2 = Number(prompt(`informe um segundo número inteiro`));
+    const n3 = Number(prompt(`informe um terceiro número inteiro`));
+
+    //PROCESSAMENTO
+    let arrayVazio = [];
+
+    if((n1 > n2) && (n1 > n3)){
+        if(n2 > n3){
+            arrayVazio = [n1, n2, n3];
+        }else{
+            arrayVazio = [n1, n3, n2];
+        }
+    }else if((n2 > n1) && (n2 > n3)){
+        if(n1 > n3){
+            arrayVazio = [n2, n1, n3];
+        }else{
+            arrayVazio = [n2, n3, n1];
+        }
+    }else{
+        if(n1 > n2){
+            arrayVazio = [n3, n1, n2];
+        }else{
+            arrayVazio = [n3, n2, n1];
+        }
+    }
+    //SAIDA
+    document.write(`Os elementos do array são:${arrayVazio.join(" - ")} `);
+
+
+</script>

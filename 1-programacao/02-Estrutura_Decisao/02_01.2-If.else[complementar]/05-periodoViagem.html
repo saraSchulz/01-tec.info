@@ -1,0 +1,23 @@
+<script>
+    //ENTRADA
+
+    const distancia = Number(prompt(`Qual a distancia da viagem?(Em quilometros)`));
+    const kmDia = Number(prompt(`Quantos quilometros você pretende viajar por dia?`));
+
+    //PROCESSAMENTO
+    let tempoViagem = distancia / kmDia ;
+
+    if (tempoViagem <= 3){
+        alert(`Poderá ser realizada em Qualquer Período`);
+    }else if(tempoViagem <= 10){
+        alert(`Poderá ser realizada em Férias de julho`);
+    }else if(tempoViagem <= 20){
+        alert(`Poderá ser realizada em Féria de Verão`);
+    }else{
+        alert(`Para realizar essa viagem você Deverá Trabalhar Remoto`);
+    }
+
+    //SAIDA
+
+
+</script>

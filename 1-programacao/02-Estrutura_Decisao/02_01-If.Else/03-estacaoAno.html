@@ -1,0 +1,49 @@
+<script>
+    //ENTRADA
+
+    const mes = prompt(`Qual o mes que você está? (1- Janeiro, 2-Fevereiro 3-março...)`);
+    const hemisferio = prompt(`Em que hemisfério você se encontra? (S-Sul , N-Norte)`);
+
+    //PROCESSAMENTO
+    if(hemisferio == "S" ){
+
+        if((mes == 1) || (mes == 2) || (mes == 3)){
+            alert(`Verão`);
+
+        }else if((mes == 4) || (mes == 5) || (mes == 6)){
+            alert(`Outono`);
+
+        }else if((mes == 7) || (mes == 8) || (mes == 9)){
+            alert(`Inverno`);
+
+        }else if ((mes == 10) || (mes == 11) || (mes == 12)){
+            alert(`Primavera`);
+        }else{
+            alert(`MÊS INVALIDO`);
+        }
+
+    }else if(hemisferio == "N"){
+
+        if((mes == 1) || (mes == 2) || (mes == 3)){
+            alert(`Inverno`);
+
+        }else if((mes == 4) || (mes == 5) || (mes == 6)){
+            alert(`Primavera`);
+
+        }else if((mes == 7) || (mes == 8) || (mes == 9)){
+            alert(`Verão`);
+
+        }else if ((mes == 10) || (mes == 11) || (mes == 12)){
+            alert(`Outono`);
+        }else{
+            alert(`MÊS INVALIDO`);
+
+        }
+
+    }else{ 
+        alert(`HEMISFÉRIO INVALIDO`);
+
+    }
+    //SAÍDA
+
+</script>

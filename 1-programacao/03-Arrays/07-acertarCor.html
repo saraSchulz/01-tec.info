@@ -1,0 +1,20 @@
+<script>
+    //ENTRADA
+
+    const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    const cor = prompt(`Informar uma cor:`).toLowerCase();
+
+    //PROCESSAMENTO
+    let numeroAleatorio = Math.floor(Math.random()*7);
+    let corInformada = nomeCores[numeroAleatorio];
+
+   
+    //SAIDA 
+
+    if( corInformada == cor){
+        document.write(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${cor}!`);
+    }else{
+        document.write(`NÃO FOI DESSA VEZ... TENTE NOVAMENTE!`);
+    }
+
+</script>

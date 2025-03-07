@@ -1,0 +1,24 @@
+<script>
+
+    //ENTRADA
+    
+    const numero = Number(prompt(`Informe um numero menor que 1000`));
+    
+    //PROCESSAMENTO
+    
+    if (numero < 10){
+        alert(`${numero} Unidades`);
+    
+    }else if(numero < 100){
+        alert(`${Math.floor(numero / 10)} Dezenas, ${numero%10} Unidades`);
+    
+    }else if(numero < 1000){
+        alert(`${Math.floor(numero / 100)} Centenas, ${Math.floor(numero%100 / 10)} Dezenas, ${(numero%10)} Unidades`);
+    
+    }else{
+        alert(`O Número informado é maior que 1000`);
+    }
+    
+    //SAIDA
+
+    </script>

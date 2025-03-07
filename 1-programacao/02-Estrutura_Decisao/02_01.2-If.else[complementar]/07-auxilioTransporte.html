@@ -1,0 +1,23 @@
+<script>
+    //ENTRADA
+
+    const salario = Number(prompt(`Qual é seu salario mensal?`));
+    const auxilio = prompt(`Você deseja receber Auxilio transporte? (S-Sim, N-Não)`);
+    const veiculo = prompt(`Você utiliza Veículo próprio para se locomover ao trabalho?(S-Sim, N-Não)`);
+
+    let desconto = 0;
+    let adicional = 0;
+    //PROCESSAMENTO
+    if ((auxilio == "S") || (veiculo == "S")){
+        desconto = salario * 0.06 ;
+        
+        if(veiculo == "S"){
+            adicional = 200;
+        }else{
+            adicional = 150;
+        }
+    }
+    let salarioFinal = salario + desconto + adicional;
+    //SAIDA
+    document.write(`Desconto de R$${desconto.toFixed(2).replace(".",",")} <br> Salario Final de R$${salarioFinal.toFixe(2).replace(".",",")}`);
+</script>

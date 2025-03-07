@@ -1,0 +1,13 @@
+<script>
+    //ENTRADA
+    const notasAluno = [7, 5, 9, 8];
+    //PROCESSAMENTO
+    notasAluno.sort((a ,b)=> a-b);
+    let soma = 0;
+    for(item of notasAluno){
+        soma = soma + item;    
+    }
+    soma = soma / notasAluno.length;
+    //SAIDA
+    document.write(`A maior nota do aluno é : ${notasAluno[3]} <br> A menor nota do aluno é : ${notasAluno[0]}<br> A média do aluno é : ${soma}`);
+</script>

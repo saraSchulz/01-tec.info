@@ -1,0 +1,22 @@
+<script>
+
+    //ENTRADA
+
+    const imovel = Number(prompt(`Informe o valor do imovel:`));
+    const tempo = Number(prompt(`Em quantos anos você deseja realizar o financiamento?`));
+    const salario = Number(prompt(`Qual o seu salario?`));
+
+    //ROCESSAMENTO
+
+    let trintaPorCento = salario * 0.3 ;
+    let meses = tempo * 12;
+    let parcelas = imovel / meses ;
+
+    //SAIDA
+    if (trintaPorCento > parcelas){
+        alert(`Financiamento Negado!`);
+    }else{
+        document.write(`Financiamento concedido ! <br> Valor das parcelas R$${parcelas.toFixed(2).replace(".",",")}`);
+    }
+
+</script>

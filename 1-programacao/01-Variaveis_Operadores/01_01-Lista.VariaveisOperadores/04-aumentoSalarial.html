@@ -1,0 +1,9 @@
+<script>
+    //entrada
+    const salario = Number(prompt(`Informe seu salário atual:`));
+    const aumento = Number(prompt(`Qual será a porcentagem de aumento do seu salário?`));
+    //processamento
+    const salarioFinal = salario + ((salario*aumento)/100);
+    //saida
+    document.write(`Seu salário final será de R$${salarioFinal.toFixed(2).replace(".",",")}`);
+</script>

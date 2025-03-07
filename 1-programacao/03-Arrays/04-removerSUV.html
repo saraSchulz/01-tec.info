@@ -1,0 +1,24 @@
+<script>
+    //ENTRADA
+
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const remover = prompt(`Qual carro deseja remover da lista? `).toLowerCase();
+
+      //PROCESSAMENTO
+    let SUVantigos = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let valorCarro = carrosSUV.indexOf(remover);
+
+    if(remover == "tiggo"){
+      carrosSUV.splice(remover, 1);
+    }else if(remover == carrosSUV[1]){
+      carrosSUV.splice(remover, 1);
+    }else if(remover == carrosSUV[2]){
+      carrosSUV.splice(remover, 1);
+    }else if(remover == carrosSUV[3]){
+      carrosSUV.splice(remover, 1);
+    }else{
+      alert("DADO INCORRETO");
+    }
+      //SAIDA
+    document.write( `${carrosSUV.join(" - ")} <br> ${SUVantigos.join(" - ")}`);
+</script>

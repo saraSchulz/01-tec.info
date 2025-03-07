@@ -1,0 +1,27 @@
+<script>
+
+    //ENTRADA
+
+    const codigo = Number(prompt(`Informe o sódigo do produto:`));
+
+    //PROCESSAMENTO
+
+    if(codigo == 1){
+        alert(`Alimento não-perecível`);
+    }else if(codigo <= 4){
+        alert(`Alimento perecível`);
+    }else if(codigo <=6){
+        alert(`Vestuário`);
+    }else if(codigo == 7){
+        alert(`Higiene Pessoal`);
+    }else if(codigo <= 15){
+        alert(`Limpeza e Utensílios Domésticos`);
+    }else if( codigo <= 20){
+        alert(`Outros`);
+    }else{
+        alert(`Código Invalido`);
+    }
+    
+    //SAÍDA
+
+</script>

@@ -1,0 +1,9 @@
+<script>
+    //entrada
+    const horas = Number(prompt(`Quantas horas você trabalha no mês?`));
+    const valorHora = Number(prompt(`quanto você recebe por hora trabalhada?`));
+    //processamento
+    const liquido = horas*valorHora-((horas*valorHora)*0.19/*8+19/100*/);
+    //saida
+    document.write(`Seu salário liquido é de ${liquido}`);
+</script>

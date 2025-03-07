@@ -1,0 +1,25 @@
+<script>
+
+    //ENTRADA
+        
+        const salario = Number(prompt(`Informe o valor do seu salario:`));
+
+    //PROCESSAMENTO
+
+        let aumento = 0;
+
+        if (salario <= 2000){
+            aumento = salario * 1.15;
+        }else if(salario <= 4000){
+            aumento = salario * 1.10;
+        }else if(salario <= 7000){
+            aumento = salario * 1.075;
+        }else {
+            aumento = salario * 1.05;
+        }
+
+    //SAIDA
+
+    document.write(`Seu novo salario será de R$${aumento.toFixed(2).replace(".",",")}.`);
+
+</script>

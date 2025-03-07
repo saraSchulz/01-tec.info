@@ -1,0 +1,121 @@
+<script>
+
+    //ENTRADA
+
+    const num1 = Number(prompt(`informe um numero`));
+    const num2 = Number(prompt(`informe outro numero`));
+    const operacao = prompt(`qual operação você deseja realizar? (responda com + , - , x ou /)`);
+    
+    //PROCESSAMENTO/SAIDA
+
+    let soma = num1 + num2;
+    let sub = num1 - num2;
+    let mult = num1 * num2;
+    let div = num1 / num2;
+
+    let restoSoma = soma%2;
+    let restoSub = sub%2;
+    let restoMult = mult%2;
+    let restoDiv = div%2;
+
+    switch(operacao){
+        //SOMA
+        case "+":
+            alert(soma);
+            switch(restoSoma){
+                case 0:
+                    alert(`Par`);
+                    break;
+                default:
+                    alert(`Impar`);
+                    break;
+            }
+            if(soma > 0){
+                alert(`Positivo`);
+            }else{
+                alert(`Negativo`);
+            }
+            switch(Number.isInteger(soma)){
+                case true:
+                    alert(`Inteiro`);
+                    break;
+                default:
+                    alert(`Decimal`);
+                    break;
+            }
+        break;
+        case "-":
+            alert(sub);
+            switch(restoSub){
+                case 0:
+                    alert(`Par`);
+                    break;
+                default:
+                    alert(`Impar`);
+                    break;
+            }
+            if(sub > 0){
+                alert(`Positivo`);
+            }else{
+                alert(`Negativo`);
+            }
+            switch(Number.isInteger(sub)){
+                case true:
+                    alert(`Inteiro`);
+                    break;
+                default:
+                    alert(`Decimal`);
+                    break;
+            }
+        break;
+        case "x":
+            alert(mult);
+            switch(restoMult){
+                case 0:
+                    alert(`Par`);
+                    break;
+                default:
+                    alert(`Impar`);
+                    break;
+            }
+            if(mult > 0){
+                alert(`Positivo`);
+            }else{
+                alert(`Negativo`);
+            }
+            switch(Number.isInteger(mult)){
+                case true:
+                    alert(`Inteiro`);
+                    break;
+                default:
+                    alert(`Decimal`);
+                    break;
+            }
+        break;
+        case "/":
+            alert(div);
+            switch(restoDiv){
+                case 0:
+                    alert(`Par`);
+                    break;
+                default:
+                    alert(`Impar`);
+                    break;
+            }
+            if(div > 0){
+                alert(`Positivo`);
+            }else{
+                alert(`Negativo`);
+            }
+            switch(Number.isInteger(div)){
+                case true:
+                    alert(`Inteiro`);
+                    break;
+                default:
+                    alert(`Decimal`);
+                    break;
+            }
+        break;
+        
+    }
+</script>

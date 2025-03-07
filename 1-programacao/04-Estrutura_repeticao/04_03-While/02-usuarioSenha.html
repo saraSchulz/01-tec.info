@@ -1,0 +1,12 @@
+<script>
+    //ENTRADA 
+    const nome = prompt(`Digite um nome de usuário:`).toLowerCase();
+    let senha = prompt(`Digite sua senha:`).toLowerCase();
+    //PROCESSAMNETO
+    while(senha == nome){
+        alert(`Sua senha não pode ser seu nome de usuário!!`);
+        senha = prompt(`Digite sua senha:`);
+    }
+    //SAIDA
+    alert(`parabéns! Agora você está cadastrado no nosso programa`);
+</script>

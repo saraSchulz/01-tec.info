@@ -1,0 +1,19 @@
+<script>
+    //ENTRADA
+    const num1 = Number(prompt(`Informe um número inicial:`));
+    const num2 = Number(prompt(`informe um número final.`));
+    //PROCESSAMENTO
+    let impares = [];
+    if(num2 > num1){
+        for(let contador = num1; contador <= num2; contador++){
+            if(contador%2 != 0){
+                impares.push(contador);
+            }
+        }
+    }else{
+        alert(`Número INICIAL é MAIOR que o numero FINAL`);
+        impares.push(`NÃO EXISTENTE`);
+    }
+    //SAIDA
+    document.write(`Os números Impares encontrados entre ${num1} e ${num2} são: ${impares.join(" - ")}`);
+</script>

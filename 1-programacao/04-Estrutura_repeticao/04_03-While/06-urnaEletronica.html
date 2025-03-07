@@ -1,0 +1,47 @@
+<script>
+    let votosJoaozinho = 0;
+let votosMariazinha = 0;
+let votosNulos = 0;
+let votosBrancos = 0;
+let totalVotos = 0;
+
+let voto;
+do {
+    voto = Number(prompt(`Digite o número correspondente ao seu voto:\n1 - Joãozinho\n2 - Mariazinha\n3 - Nulo\n4 - Branco\n0 - Encerrar votação`));
+    
+    switch (voto) {
+        case 1:
+            votosJoaozinho++;
+            totalVotos++;
+            break;
+        case 2:
+            votosMariazinha++;
+            totalVotos++;
+            break;
+        case 3:
+            votosNulos++;
+            totalVotos++;
+            break;
+        case 4:
+            votosBrancos++;
+            totalVotos++;
+            break;
+        case 0:
+            alert("Encerrando a votação...");
+            break;
+        default:
+            alert("Opção inválida! Digite um número válido.");
+    }
+} while (voto !== 0);
+
+if (totalVotos > 0) {
+    let percentualNulos = (votosNulos / totalVotos) * 100;
+    let percentualBrancos = (votosBrancos / totalVotos) * 100;
+    let vencedor = votosJoaozinho > votosMariazinha ? "Joãozinho" : votosMariazinha > votosJoaozinho ? "Mariazinha" : "Empate";
+    
+    document.write(`Resultado da eleição:<br>Joãozinho: ${votosJoaozinho} votos<br>Mariazinha: ${votosMariazinha} votos<br>Votos Nulos: ${votosNulos} (${percentualNulos.toFixed(2)}%)<br>Votos Brancos: ${votosBrancos} (${percentualBrancos.toFixed(2)}%)<br>Candidato vencedor: ${vencedor}`);
+} else {
+    alert("Nenhum voto foi registrado.");
+}
+
+</script>

@@ -1,0 +1,11 @@
+<script>
+    //entrada
+    const dias = Number(prompt('informe um dado em dias:'));
+    const horas = Number(prompt('informe um dado em horas:'));
+    const min = Number(prompt('informe um dado em minutos:'));
+    const seg = Number(prompt('informe um dado em segundos:'));
+    //processamento
+    const segundos = (dias*86400)+(horas*3600)+(min*60)+seg;
+    //saida
+    document.write(`Tempo final Em segundos definido como ${segundos}` );
+    </script>

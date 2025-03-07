@@ -1,0 +1,23 @@
+<script>
+    //ENTRADA
+
+    const precoSaoPaulo = Number(prompt(`informe o preço do transporte aéreo São Paulo`));
+    const precoRioJaneiro = Number(prompt(`informe o preço do transporte aéreo São Paulo`));
+
+    const precoHotelSP = Number(prompt(`Qual o preço das diarias de hotel para São Paulo?`));
+    const precoHotelRJ = Number(prompt(`Qual o preço das diarias de hotel para Rio de Janiro?`));
+
+    const dia = Number(prompt(`Quantos dias você vai ficar no destino?`));
+    //PROCESSAMENTO
+
+    let custoSP = precoSaoPaulo + (precoHotelSP * dia);
+    let custoRJ = precoRioJaneiro + (precoHotelRJ * dia);
+
+    //SAINDO
+    if (custoRJ > custoSP){
+        document.write(`Destino escolido : Rio de Janeiro! <br> o custo final sera de R$${custoRJ.toFixed(2).replace(".",",")}`);
+    }else{
+        document.write(`Destino escolido : São Paulo! <br> o custo final sera de R$${custoSP.toFixed(2).replace(".",",")}`);
+    }
+
+</script>

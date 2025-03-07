@@ -1,0 +1,16 @@
+<script>
+    //ENTRADA
+    let bebidas = ["Cerveja", "Vinho", "Suco Natural", "Tequila", "Água", "Refrigerante", "Vodka"];
+    //PROCESSAMENTO
+    let menorDe18 = [];
+    for(item of bebidas){
+        const beb = prompt(`A bebida "${item}" contem alcool? (S-Sim, N-Não)`).toLowerCase();
+        if(beb == "n"){
+            menorDe18.push(item);
+        }else if(beb != "s"){
+            alert(`RESPOSTA INVALIDA!! (responda com : S-Sim, N-Não ) `);
+        }
+    }
+    //SAIDA
+    document.write(`As bebidas permitidas para menores de 18 anos são : ${menorDe18.join(" - ")}`);
+</script>

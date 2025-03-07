@@ -1,0 +1,66 @@
+<script>
+    //ENTRADA
+    
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+
+    const veic1 = prompt(`informe um veiculo para ser inserido na lista :`);
+    const tipoVeic1 = prompt(`identifique o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.`).toLowerCase();
+
+    const veic2 = prompt(`informe um segundo veiculo para ser inserido na lista :`);
+    const tipoVeic2 = prompt(`identifique o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.`).toLowerCase();
+
+    const veic3 = prompt(`informe um terceiro veiculo para ser inserido na lista :`);
+    const tipoVeic3 = prompt(`identifique o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.`).toLowerCase();
+
+    //PROCESSAMENTO
+
+    switch(tipoVeic1){
+      case "suv" : 
+        carrosSUV.push(veic1);
+        break;
+      case "sedan" :
+        carrosSedan.push(veic1);
+        break;
+      case "hatch" : 
+        carrosHatch.push(veic1);
+        break;
+      default : 
+        alert(` TIPO INCORRETO `);
+        break;
+    }
+    switch(tipoVeic2){
+      case "suv" : 
+        carrosSUV.push(veic2);
+        break;
+      case "sedan" :
+        carrosSedan.push(veic2);
+        break;
+      case "hatch" : 
+        carrosHatch.push(veic2);
+        break;
+      default : 
+        alert(` TIPO INCORRETO `);
+        break;
+    }
+    switch(tipoVeic3){
+      case "suv" : 
+        carrosSUV.push(veic3);
+        break;
+      case "sedan" :
+        carrosSedan.push(veic3);
+        break;
+      case "hatch" : 
+        carrosHatch.push(veic3);
+        break;
+      default : 
+        alert(` TIPO INCORRETO `);
+        break;
+    }
+
+    //SAIDA
+
+    document.write(` Lista SUV: ${carrosSUV.join(" - ")} <br>Lista Sedan: ${carrosSedan.join(" - ")} <br>Lista Hatch: ${carrosHatch.join(" - ")}`);
+    
+</script>

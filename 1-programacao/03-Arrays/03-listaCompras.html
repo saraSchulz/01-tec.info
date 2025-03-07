@@ -1,0 +1,21 @@
+<script>
+    //ENTRADA
+
+    const frut1 = (prompt(`Insira uma fruta para sua lista de compras :`));
+    const frut2 = (prompt(`Insira uma segunda fruta para sua lista de compras :`));
+    const frut3 = (prompt(`Insira uma terceira fruta para sua lista de compras :`));
+
+    const beb1 = (prompt(`Insira uma bebida para sua lista de compras :`));
+    const beb2 = (prompt(`Insira uma segunda bebida para sua lista de compras :`));
+    const beb3 = (prompt(`Insira uma terceira bebida para sua lista de compras :`));
+
+    //PROCESSAMENTO
+
+    let arrayFrut = [frut1, frut2, frut3];
+    let arrayBeb = [beb1, beb2, beb3];
+
+    //SAIDA
+
+    document.write(`As frutas a serem compradas são: ${arrayFrut.join(", ")} <br>As bebidas a serem compradas são: ${arrayBeb.join(", ")} <br>A lista completa de compras é: ${arrayFrut.concat(arrayBeb).join(", ")}`);
+
+</script>

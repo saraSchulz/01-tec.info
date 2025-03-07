@@ -1,0 +1,16 @@
+<script>
+    //ENTRADA
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    //PROCESSAMENTO
+    let par = [];
+    let impar = [];
+    for(let num of listaDeNumeros){
+        if(num%2 == 0){
+            par.push(num);
+        }else{
+            impar.push(num);
+        }
+    }
+    //SAIDA
+    document.write(`Lista de Números Impares = ${impar.join(" - ")} <br> Lista de Números Pares = ${par.join(" - ")}`);
+</script>

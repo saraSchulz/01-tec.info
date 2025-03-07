@@ -1,0 +1,40 @@
+<script>
+    
+    //ENTRADA
+        let contaResposta = 0 ;
+        
+        let telefone = prompt(`você telefonou para vitima?`);
+        let local = prompt(`"Esteve no local do crime?"`);
+        let moradia = prompt(`Mora perto da vítima?`);
+        let divida = prompt(`Devia para a vítima?`);
+        let trabalho = prompt (`Já trabalhou com a vítima?`);
+    
+     //PROCESSAMENTO
+    
+        if(telefone == "S"){
+            contaResposta++ ;
+        }
+        if(local == "S"){
+            contaResposta++ ;
+        }
+        if(moradia == "S"){
+            contaResposta++ ;
+        }
+        if(divida == "S"){
+            contaResposta++ ;
+        }
+        if(trabalho == "S"){
+            contaResposta++ ;
+        }
+    //SAIDA
+    if(contaResposta == 1 || contaResposta == 0){
+        alert(`inocente`);
+    }else if(contaResposta == 2){
+        alert(`Suspeita`);
+    }else if(contaResposta == 3 || contaResposta ==4 ){
+        alert(`Cúmplice`);
+    } else {
+        alert(`Assassino`);
+    }
+    
+    </script>

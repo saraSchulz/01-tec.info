@@ -1,0 +1,13 @@
+<script>
+    let senha = Number(prompt(`Informe uma senha (Apenas números inteiros): `));
+    while (senha.toString().length < 4) {
+        senha = Number(prompt(`Informe uma senha válida!! (Quatro dígitos)`));
+    }
+
+    let verificacao = Number(prompt(`Informe novamente a senha inserida para a verficação:`));
+    while (verificacao !== senha) {
+        verificacao = Number(prompt(`Senha Incorreta!!!! Digite novamente:`));
+    }
+
+    alert(`Senha Correta!`);
+</script>
